@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+<style> h1{
+    margin-top: 1px;
+}
+body{
+    margin: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+    background-color:aliceblue;
+}
+input, select, textarea {
+    padding:5px;
+    font-size:15px;
+    border: 2px solid #7c97cf;
+    border-radius: 8px;
+    outline:none;
+    width: 380px;
+    display: block; 
+    margin: 0 auto;
+}
+button{
+    color:aliceblue;
+    background-color:#7c97cf;
+    border-radius: 10px;
+    border-color: #7c97cf;
+    height: 30px;
+    width: 300px;
+    display: block; 
+    margin: 0 auto;
+}
+button:hover{
+    background-color:#6279a8;
+}
+.formulario{
+    width: 30%;
+    height: 60%;
+    margin: 80px auto;
+    padding: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+</style>
+<body>
+    <div class="formulario">
+    <h1>Formulario de contacto</h1>
+    <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre"><br><br>
+
+  <label for="email">Correo:</label><br>
+  <input type="email" id="email" name="correo"><br><br>
+
+  <label for="curso">Curso:</label><br>
+  <select id="curso" name="curso">
+    <option value="nada"></option>
+    <option value="matemáticas">Matemáticas</option>
+    <option value="literatura">Literatura</option>
+    <option value="química">Química</option>
+    <option value="Lab1">Lab1</option>
+    <option value="Compuapl">Compu Aplicada</option>
+    </select><br><br>
+
+    <label for="kungfupanda">Mejor película:</label><br>
+    <select id="kungfupanda" name="kingfupanda">
+        <option value="nada"></option>
+        <option value="kungfupanda">Kung Fu Panda</option>
+        <option value="kungfupanda">Kung Fu Panda</option>
+    </select><br><br>
+    
+    <label for="comentarios">Comentarios:</label><br>
+    <textarea name="mensaje"></textarea><br><br>
+
+    <button type="button" onclick="alert('El formulario ha sido enviado.')">Enviar</button>
+    </div>
+
+</body>
+</html>
